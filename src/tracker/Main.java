@@ -1,3 +1,11 @@
+package tracker;
+
+import tracker.controllers.TaskManager;
+import tracker.model.Epic;
+import tracker.model.Status;
+import tracker.model.Subtask;
+import tracker.model.Task;
+
 public class Main {
 
     public static void main(String[] args) {

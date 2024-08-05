@@ -1,3 +1,5 @@
+package tracker.model;
+
 public class Subtask extends Task {
     private int epicId; // подзадача создается под эпик, ей должен быть известен ID эпика
 
@@ -16,7 +18,7 @@ public class Subtask extends Task {
 
     @Override
     public String toString() {
-        return "Subtask{" + super.toString() +
+        return "tracker.model.Subtask{" + super.toString() +
                 "epicId=" + epicId +
                 '}';
     }

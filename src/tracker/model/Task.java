@@ -1,10 +1,10 @@
-import java.util.Objects;
+package tracker.model;
 
 public class Task {
     private String name;
     private String description;
     private Integer id;
-    Status status;
+    private Status status;
 
     public Task(String name, String description, int id, Status status) {
         this.name = name;
@@ -66,7 +66,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" +
+        return "tracker.model.Task{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", id=" + id +

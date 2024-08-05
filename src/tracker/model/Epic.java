@@ -1,3 +1,5 @@
+package tracker.model;
+
 import java.util.ArrayList;
 
 public class Epic extends Task {
@@ -20,7 +22,7 @@ public class Epic extends Task {
 
     @Override
     public String toString() {
-        return "Epic{" + super.toString() +
+        return "tracker.model.Epic{" + super.toString() +
                 "subsList=" + subsList +
                 '}';
     }
