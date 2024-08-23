@@ -1,5 +1,9 @@
 package tracker;
 
+import tracker.controllers.InMemoryHistoryManager;
+import tracker.controllers.InMemoryTaskManager;
+
+import tracker.controllers.Managers;
 import tracker.controllers.TaskManager;
 import tracker.model.Epic;
 import tracker.model.Status;
@@ -11,7 +15,10 @@ public class Main {
     public static void main(String[] args) {
 
 
-        TaskManager taskManager = new TaskManager(); // Создайте две задачи
+
+        TaskManager taskManager = Managers.getDefault();
+
+        // Создайте две задачи
         taskManager.addNewTask(new Task("Помыть пол", "Задача 1", 123, Status.NEW));
 
         taskManager.addNewTask(new Task("Поесть", "Задача 2", 125, Status.NEW)); // Создайте эпик с двумя подзадачами
